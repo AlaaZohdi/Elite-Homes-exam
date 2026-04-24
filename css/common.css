@@ -1,0 +1,111 @@
+/* ?================= general tags ================= */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+body::-moz-selection {
+  background-color: #a684ff;
+  color: white;
+}
+body::selection {
+  background-color: #a684ff;
+  color: white;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --white-color: white;
+  --main-color: #7f22fe;
+  --light-main-color: #ddd6ff;
+  --gray-text-color: #4a5565;
+  --bs-accordion-active-bg: white !important;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+p {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  font-family: var(--main-font);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* ?================= general classes ================= */
+.text-hover:hover {
+  color: var(--main-color);
+}
+.gray-text {
+  color: var(--gray-text-color);
+}
+.main-color-text {
+  color: var(--main-color);
+}
+.main-color-bg {
+  background-color: var(--main-color);
+}
+.sec-sub-title {
+  color: var(--main-color);
+  border: solid 1px #7e22fe57;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background-color: #f5f3ff;
+  position: relative;
+}
+.sec-sub-title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-image: -webkit-gradient(linear, right top, left top, from(var(--main-color)), to(transparent));
+  background-image: -o-linear-gradient(right, var(--main-color), transparent);
+  background-image: linear-gradient(to left, var(--main-color), transparent);
+  position: absolute;
+  right: 105%;
+  top: 50%;
+}
+.sec-sub-title::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(transparent));
+  background-image: -o-linear-gradient(left, var(--main-color), transparent);
+  background-image: linear-gradient(to right, var(--main-color), transparent);
+  position: absolute;
+  left: 105%;
+  top: 50%;
+}
+.sec-main-title {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, var(--main-color)), to(#f79700));
+  background-image: -o-linear-gradient(right, var(--main-color) 50%, #f79700);
+  background-image: linear-gradient(to left, var(--main-color) 50%, #f79700);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.avater {
+  width: 50px;
+  height: 50px;
+}
+.fa-star {
+  color: #ffb900;
+}

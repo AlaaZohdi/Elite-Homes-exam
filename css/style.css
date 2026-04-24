@@ -1,0 +1,329 @@
+@import url(../css/common.css);
+
+/*? ==================== navBar section ======================= */
+.bg-body-tertiary {
+  background-color: white !important;
+}
+.page-title {
+  color: #1d293d;
+}
+.navbar-nav li {
+  -webkit-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  margin-bottom: 5px;
+}
+.navbar-nav li:hover {
+  border-radius: 5px;
+}
+.navbar-nav li:hover a {
+  color: var(--main-color);
+}
+.active {
+  color: var(--main-color);
+}
+.nav-link {
+  color: var(--gray-text-color);
+}
+.Properties div {
+  background-color: #f9fafb;
+}
+.Properties-title {
+  color: #101828;
+  font-weight: 700;
+  font-size: 15px;
+}
+.featured-properties img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-properties .item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.features {
+  color: #6a7282;
+  font-size: 12px;
+}
+.popular-locations .item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.popular-locations div .item:nth-child(1) {
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(190, 27, 190, 0.587))), url(../images/new-york.jpeg);
+  background-image:
+    -o-linear-gradient(rgba(190, 27, 190, 0.587)), url(../images/new-york.jpeg);
+  background-image:
+    linear-gradient(rgba(190, 27, 190, 0.587)), url(../images/new-york.jpeg);
+}
+.popular-locations div .item:nth-child(2) {
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0.493))), url(../images/los-angeles.jpeg);
+  background-image:
+    -o-linear-gradient(rgba(0, 0, 255, 0.493)), url(../images/los-angeles.jpeg);
+  background-image:
+    linear-gradient(rgba(0, 0, 255, 0.493)), url(../images/los-angeles.jpeg);
+}
+.popular-locations div .item:nth-child(3) {
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(187, 125, 221, 0.493))), url(../images/miami.jpeg);
+  background-image:
+    -o-linear-gradient(rgba(187, 125, 221, 0.493)), url(../images/miami.jpeg);
+  background-image:
+    linear-gradient(rgba(187, 125, 221, 0.493)), url(../images/miami.jpeg);
+}
+.icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* ?=============== hero section ================= */
+#hero {
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 128, 0.587))), url(../images/hero-bg-img.png);
+  background-image:
+    -o-linear-gradient(rgba(128, 0, 128, 0.587)), url(../images/hero-bg-img.png);
+  background-image:
+    linear-gradient(rgba(128, 0, 128, 0.587)), url(../images/hero-bg-img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#hero .main-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+#hero .sub-title {
+  font-size: 1rem;
+}
+.hero-form input,
+.hero-form select {
+  border-radius: 10px;
+  border: rgba(139, 131, 131, 0.516) 1px solid;
+  width: 100%;
+}
+.hero-form input::-webkit-input-placeholder {
+  color: rgba(139, 131, 131, 0.516);
+}
+.hero-form input::-moz-placeholder {
+  color: rgba(139, 131, 131, 0.516);
+}
+.hero-form input:-ms-input-placeholder {
+  color: rgba(139, 131, 131, 0.516);
+}
+.hero-form input::-ms-input-placeholder {
+  color: rgba(139, 131, 131, 0.516);
+}
+.hero-form input::placeholder {
+  color: rgba(139, 131, 131, 0.516);
+}
+.hero-form button {
+  background-color: var(--main-color);
+}
+/* ?============= services section ================ */
+#services .nav-item .active {
+  background-color: #f5f3ff;
+  padding-inline: 5px;
+}
+#services .nav-item button.active {
+  color: var(--main-color);
+}
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  border-bottom-color: var(--main-color);
+}
+/* ?============= featured-properties ================ */
+#featuredProperities {
+  background-color: #f9fafb;
+}
+#featuredProperities .card .Price {
+  font-size: 30px;
+  font-weight: 700;
+}
+#featuredProperities .card .img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#featuredProperities .card button {
+  background-color: #ddd6ff;
+}
+#featuredProperities .card .img-wrapper {
+  height: 300px;
+}
+#featuredProperities .card .home-img {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#featuredProperities .card:hover .home-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  padding-bottom: 10px;
+}
+#featuredProperities .card {
+  overflow: hidden;
+}
+.up-span {
+  bottom: 90%;
+  left: 20px;
+}
+.down-span {
+  top: -15%;
+  right: 15%;
+}
+.down-right-span {
+  bottom: 90%;
+  left: 49%;
+}
+/* ?============= feedbacks ================ */
+#feedbacks {
+  background-color: #4f1798;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #865cb3;
+}
+.carousel-control-prev {
+  background-color: #7245ad;
+  width: 42px;
+  height: 42px;
+  padding-top: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.carousel-control-next {
+  background-color: #7245ad;
+  width: 42px;
+  height: 42px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* ? ============== help center ============== */
+.accordion-item {
+  -webkit-box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.342);
+          box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.342);
+}
+.accordion-button:not(.collapsed) {
+  background-color: white;
+}
+/* ? ============== contactSection ============== */
+#contactSection .col-md-6 {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#contactSection .col-md-6:hover {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+#contactSection .col-md-6:nth-child(1) {
+  .item .icon {
+    background-color: var(--main-color);
+  }
+  &:hover .border {
+    border: var(--bs-border-width) var(--bs-border-style) var(--main-color) !important;
+  }
+}
+#contactSection .col-md-6:nth-child(2) {
+  .item .icon {
+    background-color: #8849dfcb;
+  }
+  &:hover .border {
+    border: var(--bs-border-width) var(--bs-border-style) #8849dfcb !important;
+  }
+}
+#contactSection .col-md-6:nth-child(3) {
+  .item .icon {
+    background-image: -o-linear-gradient(135deg, #e552df, #f9933d);
+    background-image: linear-gradient(-45deg, #e552df, #f9933d);
+  }
+  p:nth-of-type(3) {
+    color: #e60076;
+  }
+  &:hover .border {
+    border: var(--bs-border-width) var(--bs-border-style) #e552df !important;
+  }
+}
+#contactSection .col-md-6:nth-child(4) {
+  .item .icon {
+    background-color: blue;
+  }
+  p:nth-of-type(3) {
+    color: blue;
+  }
+  &:hover .border {
+    border: var(--bs-border-width) var(--bs-border-style) blue !important;
+  }
+}
+.contact-info {
+  background-color: #e0e1e344;
+}
+.contact-info .item p {
+  font-size: 14px;
+}
+.contect-us {
+  background-color: #8b1cfc;
+}
+#contactSection .icons .icon {
+  background-color: #a149fd;
+}
+.msg-us input,
+.msg-us select {
+  border: rgba(212, 206, 206, 0.562) 1px solid;
+  background-color: #f9fafb;
+}
+/* ?=============== footer =============== */
+#footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4f1798), to(#59178c));
+  background-image: -o-linear-gradient(#4f1798, #59178c);
+  background-image: linear-gradient(#4f1798, #59178c);
+}
+/* ?================ media =============== */
+/* ?=============== mediam screens ============== */
+
+@media screen and (min-width: 768px) {
+  .carousel-inner {
+    width: 80%;
+    margin: auto;
+  }
+}
+/* ?=============== large screens ============== */
+@media screen and (min-width: 992px) {
+  #navBar .navbar-nav li:hover:after {
+    content: "";
+    background-color: var(--main-color);
+    width: 100%;
+    height: 2px;
+    display: block;
+  }
+  #services .content-wrapper,
+  #services .img-wrapper {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+  }
+}
